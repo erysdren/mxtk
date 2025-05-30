@@ -165,7 +165,7 @@ mxGetFolderPath (mxWindow *parent, const char *path)
 	bi.pszDisplayName = (LPSTR) path;
 	bi.lpszTitle = "Pick a Folder";
 	bi.lpfn	= BrowseCallbackProc;
-	bi.lParam =  (long) path;
+	bi.lParam =  (LPARAM)path;
 
 	pidl = SHBrowseForFolderA (&bi);
 

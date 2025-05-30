@@ -28,12 +28,12 @@ mxToolTip::add (mxWidget *widget, const char *text)
 	if (!widget)
 		return;
 
-	TOOLINFO ti;
+	TTTOOLINFOA ti;
 
-	memset (&ti, 0, sizeof (TOOLINFO));
-	ti.cbSize = sizeof (TOOLINFO);
+	memset (&ti, 0, sizeof (TTTOOLINFOA));
+	ti.cbSize = sizeof (TTTOOLINFOA);
 	ti.uFlags = TTF_IDISHWND | TTF_SUBCLASS;
-	ti.uId = (UINT) (HWND) widget->getHandle ();
+	ti.uId = (UINT_PTR) (HWND) widget->getHandle ();
 	ti.lpszText = (LPTSTR) text;
 
 	HWND ctrl = mx_CreateToolTipControl ();

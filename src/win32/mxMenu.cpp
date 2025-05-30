@@ -65,7 +65,7 @@ mxMenu::add (const char *item, int id)
 void
 mxMenu::addMenu (const char *item, mxMenu *menu)
 {
-	AppendMenu ((HMENU) getHandle (), MF_POPUP, (UINT) menu->getHandle (), item);
+	AppendMenuA ((HMENU) getHandle (), MF_POPUP, (UINT_PTR) menu->getHandle (), item);
 	d_this->d_menuList.push_back(menu);
 }
 
