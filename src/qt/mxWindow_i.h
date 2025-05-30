@@ -81,7 +81,7 @@ protected:
 			d_button |= mxEvent::MouseLeftButton;
 		if (e->buttons () & Qt::RightButton)
 			d_button |= mxEvent::MouseRightButton;
-		if (e->buttons () & Qt::MidButton)
+		if (e->buttons () & Qt::MiddleButton)
 			d_button |= mxEvent::MouseMiddleButton;
 		
 		mxEvent event;
@@ -105,7 +105,7 @@ protected:
 			d_button |= mxEvent::MouseLeftButton;
 		if (e->buttons () & Qt::RightButton)
 			d_button |= mxEvent::MouseRightButton;
-		if (e->buttons () & Qt::MidButton)
+		if (e->buttons () & Qt::MiddleButton)
 			d_button |= mxEvent::MouseMiddleButton;
 		
 		mxEvent event;
@@ -136,7 +136,7 @@ protected:
 			d_button |= mxEvent::MouseLeftButton;
 		if (e->buttons () & Qt::RightButton)
 			d_button |= mxEvent::MouseRightButton;
-		if (e->buttons () & Qt::MidButton)
+		if (e->buttons () & Qt::MiddleButton)
 			d_button |= mxEvent::MouseMiddleButton;
 		
 		mxEvent event;
