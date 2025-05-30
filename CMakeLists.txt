@@ -16,3 +16,4 @@ add_library(mxtk STATIC ${SOURCES_COMMON} ${SOURCES_PLATFORM})
 target_include_directories(mxtk PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
 target_link_libraries(mxtk PRIVATE Qt5::OpenGL)
+set_target_properties(mxtk PROPERTIES CXX_STANDARD_REQUIRED TRUE CXX_STANDARD 98)
